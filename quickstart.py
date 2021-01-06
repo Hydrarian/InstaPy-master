@@ -4,7 +4,7 @@ from instapy import smart_run
 
 # login credentials
 insta_username = 'solstizio89'
-insta_password = '$@Hu$8Hu'
+insta_password = '$@Hu$10Hu'
 
 comments = ['Nice shot!  ',
         'I love your profile!  ',
@@ -28,7 +28,7 @@ with smart_run(session):
 
 #commenti in italiano
   session.set_comments([#'Awesome dude!','Nice shot!','I love your profile!','Your feed is an inspiration :thumbsup:','Just incredible :open_mouth:','What camera did you use?','Love your posts','Looks awesome','Getting inspired by you',':raised_hands: Yes!','I can feel your passion :muscle:'
-        'Spettacolare', 'Veramente bello', 'Mi piace!','Bello scatto!','Complimenti per le foto','Le tue foto sono di ispirazione, grazie','Figo!','Complimenti, che fotocamera hai usato?','Bei post, complimenti','Complimenti, bei post','Di ispirazione, complimenti',':raised_hands: Figo!','Complimenti, continua così! :muscle:', 'Grande!'
+        'Spettacolare','Wow contenuto di gran classe!','Super!','Che potenza!','Mitico!', 'Veramente bello', 'Che classe!','Mi piace!','Bello scatto!','Complimenti per le foto','Le tue foto sono di ispirazione, grazie','Figo!','Complimenti, che fotocamera hai usato?','Bei post, complimenti','Complimenti, bei post','Di ispirazione, complimenti',':raised_hands: Figo!','Complimenti, continua così! :muscle:', 'Grande!'
         ])
   session.set_do_comment(enabled=True, percentage=80)
   # general settings		
@@ -37,8 +37,8 @@ with smart_run(session):
   # activity		
   #session.like_by_tags(["abruzzo","marche"], amount=40)
 
-  session.like_by_tags(['sentiero'], amount=100, interact=True)
-  session.follow_by_tags(['meraviglioso'], amount=0)
+  session.like_by_tags(['trekking'], amount=100, interact=True)
+  session.follow_by_tags(['follow4follow'], amount=4)
   
   #session.set_comments(comments)
   #session.join_pods(topic='sports', engagement_mode='no_comments')
@@ -50,7 +50,7 @@ with smart_run(session):
   #salta gli utenti senza immagine del profilo
   session.set_skip_users(skip_private=True, skip_no_profile_pic=True, no_profile_pic_percentage=100)
 
-  session.set_relationship_bounds(enabled=True, potency_ratio=1.34, delimit_by_numbers=True, max_followers=8500, max_following=4490, min_followers=100, min_following=56, min_posts=10, max_posts=1000)
+  session.set_relationship_bounds(enabled=True, potency_ratio=0.34, delimit_by_numbers=True, max_followers=8500, max_following=4490, min_followers=100, min_following=56, min_posts=10, max_posts=1000)
   
   #delay tra le azioni
-  session.set_action_delays(enabled=True, like=5.2, randomize=True, random_range_from=70, random_range_to=210)
+  session.set_action_delays(enabled=True, like=5.2, randomize=True, random_range_from=180, random_range_to=980)
