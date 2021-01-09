@@ -4,7 +4,7 @@ from instapy import smart_run
 
 # login credentials
 insta_username = 'solstizio89'
-insta_password = '$@Hu$10Hu'
+insta_password = '$@Hu$9Hu$'
 
 comments = ['Nice shot!  ',
         'I love your profile!  ',
@@ -53,4 +53,4 @@ with smart_run(session):
   session.set_relationship_bounds(enabled=True, potency_ratio=0.34, delimit_by_numbers=True, max_followers=8500, max_following=4490, min_followers=100, min_following=56, min_posts=10, max_posts=1000)
   
   #delay tra le azioni
-  session.set_action_delays(enabled=True, like=5.2, randomize=True, random_range_from=180, random_range_to=980)
+  session.set_action_delays(enabled=True, like=5.2, randomize=True, random_range_from=180, random_range_to=580)
